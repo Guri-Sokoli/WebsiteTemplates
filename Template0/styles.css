@@ -22,3 +22,15 @@ a.HeaderLink:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
+
+@media (max-width: 420px) {
+    .primary-navigation {
+        gap: 2em;
+        position: fixed;
+        inset: 0 0 0 35%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        background: hsla(199, 36%, 59%, 0.7);
+        backdrop-filter: blur(1rem);
+    }
+}
