@@ -16,39 +16,35 @@
     <body>
         <div class="flex flex-col">
             <header
-                class="flex flex-row p-4 sm:justify-around w-full bg-white text-center shadow-xl"
+                class="flex flex-row p-4 sm:justify-between w-full bg-white text-center shadow-xl px-12 lg:px-32 z-10"
             >
                 <div><img src="./images/logo.png" alt="logo" /></div>
                 <div class="flex hamburger-menu">
-                    <div>
-                        <input
-                            class="sm:hidden"
-                            id="menu__toggle"
-                            type="checkbox"
-                        />
-                        <label class="menu__btn sm:hidden" for="menu__toggle">
-                            <span></span>
-                        </label>
-                    </div>
-                    <div>
-                        <ul class="flex menu__box flex-col sm:hidden">
-                            <li class="">
-                                <a class="menu__item" href="#">Home</a>
-                            </li>
-                            <li class="">
-                                <a class="menu__item" href="#">About Us</a>
-                            </li>
-                            <li class="">
-                                <a class="menu__item" href="#">Location</a>
-                            </li>
-                            <li class="">
-                                <a class="menu__item" href="#">Contact Us</a>
-                            </li>
-                            <li class="">
-                                <a class="menu__item" href="#">Gallery</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <input
+                        class="sm:hidden"
+                        id="menu__toggle"
+                        type="checkbox"
+                    />
+                    <label class="menu__btn sm:hidden" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="flex menu__box flex-col sm:hidden">
+                        <li class="">
+                            <a class="menu__item" href="#">Home</a>
+                        </li>
+                        <li class="">
+                            <a class="menu__item" href="#">About Us</a>
+                        </li>
+                        <li class="">
+                            <a class="menu__item" href="#">Location</a>
+                        </li>
+                        <li class="">
+                            <a class="menu__item" href="#">Contact Us</a>
+                        </li>
+                        <li class="">
+                            <a class="menu__item" href="#">Gallery</a>
+                        </li>
+                    </ul>
                     <div>
                         <ul class="flex flex-row invisible my-4 sm:visible">
                             <li class="hidden sm:flex">
@@ -62,7 +58,7 @@
                                 <a
                                     class="text-center text-lg font-semibold mx-4 px-2 HeaderLink"
                                     href="#"
-                                    >Aboutss Us</a
+                                    >About Us</a
                                 >
                             </li>
                             <li class="hidden sm:flex">
@@ -90,6 +86,44 @@
                     </div>
                 </div>
             </header>
+            <content class="flex flex-col sm:flex-row bg-slate-300">
+                <content class="flex flex-col w-fit">
+                    <div class="flex p-12 lg:px-32 lg:pt-32">
+                        <h1
+                            class="flex text-4xl sm:text-6xl text-left font-semibold"
+                        >
+                            Glass Installation in South Florida
+                        </h1>
+                    </div>
+                    <div class="flex flex-col px-12 pb-12 lg:px-32 md:pb-32">
+                        <h3 class="flex text-2xl sm:text-3xl text-left">
+                            Our company believes in the core values of customer
+                            satisfaction, dependability and integrity, as these
+                            values shape our employees and the quality of our
+                            work.
+                        </h3>
+                        <h3 class="flex text-2xl text-white text-left mt-5">
+                            <a
+                                href="#"
+                                class="bg-gray-600 p-4 rounded-lg shadow-xl hover:bg-white hover:text-black hover:border-2 hover:border-gray-600 duration-500"
+                                >Hover Me!</a
+                            >
+                        </h3>
+                    </div>
+                </content>
+                <div
+                    class="flex flex-col w-full px-12 sm:pl-0 sm:pr-12 sm:justify-center lg:pr-32"
+                >
+                    <div class="flex flex-col items-center">
+                        <img
+                            class="flex border-4 border-black w-full sm:w-full h-64"
+                            alt="Image"
+                        />
+                        <h4>A recent work of ours.</h4>
+                    </div>
+                </div>
+            </content>
+            <div></div>
         </div>
     </body>
 </html>
