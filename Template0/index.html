@@ -1,90 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Experience top-quality glass installation services in South Florida. Our expert team delivers exceptional residential and commercial glazing solutions. Contact us for reliable and professional glasswork today."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./styles.css" />
-
         <link
             rel="stylesheet"
             type="text/css"
             href="./cssmap-europe/cssmap-europe.css"
             media="screen"
         />
+        <link rel="manifest" href="./mainfest.json" />
+        <meta name="theme-color" content="#0077b5" />
+        <link rel="icon" href="./favicon.svg" type="icon" />
+
+        <title>Template 0</title>
     </head>
     <body>
         <div class="flex flex-col">
             <header
-                class="flex flex-row justify-between w-full p-4 bg-white text-center shadow-xl z-10 sm:bg-black md:bg-white"
+                class="flex flex-row p-4 sm:justify-between w-full bg-white text-center shadow-xl px-12 lg:px-32 z-50 sticky top-0 sm:relative"
             >
-                <img
-                    src=""
-                    class="flex w-auto h-16 items-center justify-center text-center bg-gray-600"
-                    alt="Logo"
-                />
-                <div class="flex flex-row pr-20">
-                    <p class="flex items-center px-12 font-semibold text-lg">
-                        <a class="HeaderLink" href="#" class="p-2">Home</a>
-                    </p>
-                    <p class="flex items-center px-12 font-semibold text-lg">
-                        <a class="HeaderLink" href="#" class="p-2">About Us</a>
-                    </p>
-                    <p class="flex items-center px-12 font-semibold text-lg">
-                        <a class="HeaderLink" href="#" class="p-2">Location</a>
-                    </p>
-                    <p class="flex items-center px-12 font-semibold text-lg">
-                        <a class="HeaderLink" href="#" class="p-2"
-                            >Contact Us</a
-                        >
-                    </p>
-                    <p class="flex items-center px-12 font-semibold text-lg">
-                        <a class="HeaderLink" href="#" class="p-2">Gallery</a>
-                    </p>
+                <div>
+                    <img src="https://picsum.photos/50/50" alt="logo" />
+                </div>
+                <div class="flex hamburger-menu">
+                    <input
+                        class="sm:hidden"
+                        id="menu__toggle"
+                        type="checkbox"
+                    />
+                    <label class="menu__btn sm:hidden" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="flex menu__box flex-col sm:hidden">
+                        <li class="">
+                            <a
+                                class="menu__item"
+                                data-scroll-to="section1"
+                                href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="">
+                            <a
+                                class="menu__item"
+                                data-scroll-to="section2"
+                                href="#"
+                                >About Us</a
+                            >
+                        </li>
+                        <li class="">
+                            <a
+                                class="menu__item"
+                                data-scroll-to="section3"
+                                href="#"
+                                >Location</a
+                            >
+                        </li>
+                        <li class="">
+                            <a
+                                class="menu__item"
+                                data-scroll-to="section4"
+                                href="#"
+                                >Contact Us</a
+                            >
+                        </li>
+                        <li class="">
+                            <a
+                                class="menu__item"
+                                data-scroll-to="section5"
+                                href="#"
+                                >Gallery</a
+                            >
+                        </li>
+                    </ul>
+                    <div>
+                        <ul class="flex flex-row invisible my-4 sm:visible">
+                            <li class="hidden sm:flex">
+                                <a
+                                    data-scroll-to="section1"
+                                    class="text-center text-lg font-semibold mx-4 px-2 HeaderLink"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="hidden sm:flex">
+                                <a
+                                    data-scroll-to="section2"
+                                    class="text-center text-lg font-semibold mx-4 px-2 HeaderLink"
+                                    href="#"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li class="hidden sm:flex">
+                                <a
+                                    data-scroll-to="section3"
+                                    class="text-center text-lg font-semibold mx-4 px-2 HeaderLink"
+                                    href="#"
+                                    >Location</a
+                                >
+                            </li>
+                            <li class="hidden sm:flex">
+                                <a
+                                    data-scroll-to="section4"
+                                    class="text-center text-lg font-semibold mx-4 px-2 HeaderLink"
+                                    href="#"
+                                    >Contact Us</a
+                                >
+                            </li>
+                            <li class="hidden sm:flex">
+                                <a
+                                    data-scroll-to="section5"
+                                    class="text-center text-lg font-semibold mx-4 px-2 HeaderLink"
+                                    href="#"
+                                    >Gallery</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </header>
-
-            <div class="flex flex-row w-full bg-slate-300">
-                <div class="flex flex-col w-2/3 p-64 sm:p-32">
-                    <h1 class="flex text-6xl text-left font-normal pb-8">
-                        Glass Installation in South Florida
-                    </h1>
-                    <h3 class="flex text-2xl text-left pb-8">
-                        Our company believes in the core values of customer
-                        satisfaction, dependability and integrity, as these
-                        values shape our employees and the quality of our work.
-                    </h3>
-                    <h3 class="flex text-2xl text-left">
-                        Ready to <em>"Let the Light in"</em> ?
-                    </h3>
-                    <h3 class="flex text-2xl text-white text-left mt-5">
-                        <a
-                            href="#"
-                            class="bg-gray-600 p-4 rounded-lg shadow-xl hover:bg-white hover:text-black hover:border-2 hover:border-gray-600 duration-500"
-                            >Hover Me!</a
+            <section
+                id="section1"
+                class="flex flex-col sm:flex-row bg-slate-300"
+            >
+                <content class="flex flex-col w-fit">
+                    <div class="flex p-12 lg:px-32 lg:pt-32">
+                        <h1
+                            class="flex text-4xl sm:text-6xl text-left font-semibold"
                         >
-                    </h3>
-                </div>
+                            Glass Installation in South Florida
+                        </h1>
+                    </div>
+                    <div class="flex flex-col px-12 pb-12 lg:px-32 md:pb-32">
+                        <h2 class="flex text-xl sm:text-3xl text-left">
+                            Our company believes in the core values of customer
+                            satisfaction, dependability and integrity, as these
+                            values shape our employees and the quality of our
+                            work.
+                        </h2>
+                        <h3 class="flex text-lg text-white text-left mt-5">
+                            <a
+                                href="#"
+                                class="bg-gray-600 p-4 rounded-lg shadow-xl hover:bg-white hover:text-black hover:border-2 hover:border-gray-600 duration-500"
+                                >Hover Me!</a
+                            >
+                        </h3>
+                    </div>
+                </content>
                 <div
-                    class="flex flex-col justify-center items-center w-1/3 px-12 py-32"
+                    class="flex flex-col w-full px-12 sm:pl-0 sm:pr-12 sm:justify-center lg:pr-32"
                 >
-                    <img
-                        class="flex w-full h-full justify-center items-center border-4 border-black"
-                        alt="Image"
-                    />
-                    <h4>A recent work of ours.</h4>
+                    <div class="flex flex-col items-center">
+                        <img
+                            src="https://picsum.photos/600/400"
+                            class="flex border-4 border-black w-full sm:w-full h-64"
+                            alt="Image"
+                        />
+                        <h4>A recent work of ours.</h4>
+                    </div>
                 </div>
-            </div>
-
-            <div class="flex flex-col w-full bg-slate-200">
-                <h1
-                    class="flex justify-center text-6xl text-center font-normal pt-32"
-                >
-                    Our Services
-                </h1>
-                <h3>
-                    <p
-                        class="flex justify-center text-2xl text-center text-gray-600 font-normal pt-8 px-64"
+            </section>
+            <section id="section2">
+                <div class="flex flex-col justify-center items-center">
+                    <h1
+                        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold py-8"
+                    >
+                        Our Services
+                    </h1>
+                    <h2
+                        class="text-xl md:text-2xl lg:text-3xl font-normal text-center px-12 pb-8 text-zinc-700 lg:px-32"
                     >
                         Glass & Glazing is a family-owned business, operating
                         out of South Florida. In our years of operation, we have
@@ -92,33 +183,32 @@
                         ourselves on dependability, productivity, and
                         professionalism as we provide our services to our
                         customers.
-                    </p>
-                </h3>
-                <h3>
-                    <p
-                        class="flex justify-center text-2xl text-center text-gray-600 font-normal pt-8 px-64"
+                    </h2>
+                    <h3
+                        class="text-lg font-normal text-center px-12 pb-8 text-zinc-700 md:text-xl lg:text-2xl"
                     >
                         We do both commercial and residential buildings.
-                    </p>
-                </h3>
-
+                    </h3>
+                </div>
                 <div
-                    class="w-full grid grid-cols-2 gap-32 text-center mt-8 px-8"
+                    class="flex flex-col w-fit px-12 py-8 items-center md:flex-row md:justify-between lg:px-32"
                 >
                     <div
-                        class="flex flex-col shadow-xl hover:scale-105 duration-500"
+                        class="flex flex-col w-full rounded-b-lg shadow-xl hover:scale-105 duration-500 w-5/6 mb-8 md:w-4/6 md:mx-12"
                     >
                         <img
-                            src="https://placekitten.com/600/200"
-                            alt="Kitten"
-                            class="bg-cover w-screen rounded-t-lg"
+                            src="https://picsum.photos/600/200"
+                            alt="Picture"
+                            class="bg-cover w-full rounded-t-lg"
                         />
                         <div class="bg-white rounded-b-lg">
-                            <h2 class="flex text-3xl text-left font-normal p-3">
-                                Example Project
-                            </h2>
                             <p
-                                class="flex text-lg text-left text-gray-600 font-normal p-3"
+                                class="text-center text-2xl font-normal p-2 sm:text-left lg:text-4xl lg:p-4"
+                            >
+                                Example Project
+                            </p>
+                            <p
+                                class="rounded-b-lg text-md text-gray-600 font-normal p-2 text-center sm:text-left lg:text-2xl lg:p-4"
                             >
                                 Glass & Glazing is a family-owned business,
                                 operating out of South Florida.
@@ -126,19 +216,21 @@
                         </div>
                     </div>
                     <div
-                        class="flex flex-col shadow-xl hover:scale-105 duration-500"
+                        class="flex flex-col w-full rounded-b-lg shadow-xl hover:scale-105 duration-500 w-5/6 mb-8 md:w-4/6 md:mx-12"
                     >
                         <img
-                            src="https://placekitten.com/600/200"
-                            alt="Kitten"
-                            class="bg-cover w-screen rounded-t-lg"
+                            src="https://picsum.photos/600/200"
+                            alt="Picture"
+                            class="bg-cover w-full rounded-t-lg"
                         />
                         <div class="bg-white rounded-b-lg">
-                            <h2 class="flex text-3xl text-left font-normal p-3">
+                            <h2
+                                class="rounded-b-lg text-2xl font-normal p-2 text-center sm:text-left lg:text-4xl lg:p-4"
+                            >
                                 Example Project
                             </h2>
                             <p
-                                class="flex text-lg text-left text-gray-600 font-normal p-3"
+                                class="rounded-b-lg text-md sm:text-lg text-gray-600 font-normal p-2 text-center sm:text-left lg:text-2xl lg:p-4"
                             >
                                 Glass & Glazing is a family-owned business,
                                 operating out of South Florida.
@@ -146,256 +238,340 @@
                         </div>
                     </div>
                 </div>
-
                 <div
-                    class="w-full grid grid-cols-4 gap-8 text-center mt-8 px-8 pb-10"
+                    class="flex flex-col md:flex-row md:justify-around md:px-12 lg:px-32"
                 >
                     <div
-                        class="flex flex-col shadow-xl hover:scale-105 duration-500"
+                        class="flex flex-row w-screen justify-center px-12 md:w-max md:px-0 pb-8"
                     >
-                        <img
-                            src="https://placekitten.com/600/200"
-                            alt="Kitten"
-                            class="bg-cover w-screen h-2/3 h-2/3 rounded-t-lg"
-                        />
-                        <div class="bg-white rounded-b-lg">
-                            <h2 class="flex text-3xl text-left font-normal p-3">
-                                Example Project
-                            </h2>
-                            <p
-                                class="flex text-lg text-left text-gray-600 font-normal p-3"
-                            >
-                                Glass & Glazing is a family-owned business,
-                                operating out of South Florida.
-                            </p>
+                        <div
+                            class="flex flex-col w-full h-fit rounded-b-lg shadow-xl hover:scale-105 duration-500 w-5/12 mb-8 mr-4 md:w-4/6 md:mx-12 md:w-full"
+                        >
+                            <img
+                                src="https://picsum.photos/400/600"
+                                alt="Picture"
+                                class="bg-cover w-full rounded-t-lg"
+                            />
+                            <div class="bg-white rounded-b-lg">
+                                <p
+                                    class="text-center text-lg sm:text-2xl font-normal p-2 sm:text-left lg:text-4xl lg:p-4"
+                                >
+                                    Example Project
+                                </p>
+                                <p
+                                    class="rounded-b-lg text-sm sm:text-lg text-gray-600 font-normal p-2 text-center sm:text-left lg:text-2xl l"
+                                >
+                                    Glass & Glazing is a family-owned business.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col w-full h-fit rounded-b-lg shadow-xl hover:scale-105 duration-500 w-5/12 mb-8 mr-4 md:w-4/6 md:mx-12 md:w-full"
+                        >
+                            <img
+                                src="https://picsum.photos/400/600"
+                                alt="Picture"
+                                class="bg-cover w-full rounded-t-lg"
+                            />
+                            <div class="bg-white rounded-b-lg">
+                                <p
+                                    class="text-center text-lg sm:text-2xl font-normal p-2 sm:text-left lg:text-4xl lg:p-4"
+                                >
+                                    Example Project
+                                </p>
+                                <p
+                                    class="rounded-b-lg text-sm sm:text-lg text-gray-600 font-normal p-2 text-center sm:text-left lg:text-2xl l"
+                                >
+                                    Glass & Glazing is a family-owned business.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div
-                        class="flex flex-col shadow-xl hover:scale-105 duration-500"
+                        class="flex flex-row w-screen justify-center px-12 md:w-max md:px-0 pb-8"
                     >
-                        <img
-                            src="https://placekitten.com/600/200"
-                            alt="Kitten"
-                            class="bg-cover w-screen h-2/3 rounded-t-lg"
-                        />
-                        <div class="bg-white rounded-b-lg">
-                            <h2 class="flex text-3xl text-left font-normal p-3">
-                                Example Project
-                            </h2>
-                            <p
-                                class="flex text-lg text-left text-gray-600 font-normal p-3"
-                            >
-                                Glass & Glazing is a family-owned business,
-                                operating out of South Florida.
-                            </p>
+                        <div
+                            class="flex flex-col w-full h-fit rounded-b-lg shadow-xl hover:scale-105 duration-500 w-5/12 mb-8 mr-4 md:w-4/6 md:mx-12 md:w-full"
+                        >
+                            <img
+                                src="https://picsum.photos/400/600"
+                                alt="Picture"
+                                class="bg-cover w-full rounded-t-lg"
+                            />
+                            <div class="bg-white rounded-b-lg">
+                                <p
+                                    class="text-center text-lg sm:text-2xl font-normal p-2 sm:text-left lg:text-4xl lg:p-4"
+                                >
+                                    Example Project
+                                </p>
+                                <p
+                                    class="rounded-b-lg text-sm sm:text-lg text-gray-600 font-normal p-2 text-center sm:text-left lg:text-2xl l"
+                                >
+                                    Glass & Glazing is a family-owned business.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        class="flex flex-col shadow-xl hover:scale-105 duration-500"
-                    >
-                        <img
-                            src="https://placekitten.com/600/200"
-                            alt="Kitten"
-                            class="bg-cover w-screen h-2/3 rounded-t-lg"
-                        />
-                        <div class="bg-white rounded-b-lg">
-                            <h2 class="flex text-3xl text-left font-normal p-3">
-                                Example Project
-                            </h2>
-                            <p
-                                class="flex text-lg text-left text-gray-600 font-normal p-3"
-                            >
-                                Glass & Glazing is a family-owned business,
-                                operating out of South Florida.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex-col shadow-xl hover:scale-105 duration-500"
-                    >
-                        <img
-                            src="https://placekitten.com/600/200"
-                            alt="Kitten"
-                            class="bg-cover w-screen h-2/3 rounded-t-lg"
-                        />
-                        <div class="bg-white rounded-b-lg">
-                            <h2 class="flex text-3xl text-left font-normal p-3">
-                                Example Project
-                            </h2>
-                            <p
-                                class="flex text-lg text-left text-gray-600 font-normal p-3"
-                            >
-                                Glass & Glazing is a family-owned business,
-                                operating out of South Florida.
-                            </p>
+                        <div
+                            class="flex flex-col w-full h-fit rounded-b-lg shadow-xl hover:scale-105 duration-500 w-5/12 mb-8 mr-4 md:w-4/6 md:mx-12 md:w-full"
+                        >
+                            <img
+                                src="https://picsum.photos/400/600"
+                                alt="Picture"
+                                class="bg-cover w-full rounded-t-lg"
+                            />
+                            <div class="bg-white rounded-b-lg">
+                                <p
+                                    class="text-center text-lg sm:text-2xl font-normal p-2 sm:text-left lg:text-4xl lg:p-4"
+                                >
+                                    Example Project
+                                </p>
+                                <p
+                                    class="rounded-b-lg text-sm sm:text-lg text-gray-600 font-normal p-2 text-center sm:text-left lg:text-2xl l"
+                                >
+                                    Glass & Glazing is a family-owned business.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div
-                class="flex flex-col w-full bg-white justify-center items-center shadow-xl z-10 pt-8 pb-32"
+            </section>
+            <section
+                id="section3"
+                class="flex flex-col justify-center sm:justify-around items-center bg-slate-300 pb-12"
             >
-                <h1 class="flex text-6xl text-left font-normal py-4">
-                    Where we operate
-                </h1>
-                <div class="flex flex-row justify-around w-full h-full">
-                    <ul class="flex flex-col justify-around">
-                        <li class="text-6xl">Germany</li>
-                        <li class="text-6xl">France</li>
-                        <li class="text-6xl">Italy</li>
-                        <li class="text-6xl">Finland</li>
-                        <li class="text-6xl">England</li>
+                <p
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold py-12 md:text-6xl lg:text-7xl"
+                >
+                    Where We Operate
+                </p>
+                <div
+                    class="flex flex-col sm:flex-row justify-around w-max h-full sm:px-12 sm:w-full sm:justify-around md:px-24 md:justify-between"
+                >
+                    <ul
+                        class="flex flex-row justify-around w-screen sm:flex-col sm:py-auto md:w-fit"
+                    >
+                        <li class="text-2xl sm:text-3xl">Germany</li>
+                        <li class="text-2xl sm:text-3xl">France</li>
+                        <li class="text-2xl sm:text-3xl">Italy</li>
+                        <li class="text-2xl sm:text-3xl">Finland</li>
+                        <li class="text-2xl sm:text-3xl">O-Block</li>
                     </ul>
-                    <div id="map-europe" class="flex m-0">
-                        <ul class="europe mt-12">
-                            <li class="eu1">
-                                <a href="#albania">Albania</a>
-                            </li>
-                            <li class="eu2"><a href="#andorra">Andorra</a></li>
-                            <li class="eu3"><a href="#austria">Austria</a></li>
-                            <li class="eu4"><a href="#belarus">Belarus</a></li>
-                            <li class="eu5"><a href="#belgium">Belgium</a></li>
-                            <li class="eu6">
-                                <a href="#bosnia-and-herzegovina"
-                                    >Bosnia and Herzegovina</a
-                                >
-                            </li>
-                            <li class="eu7">
-                                <a href="#bulgaria">Bulgaria</a>
-                            </li>
-                            <li class="eu8"><a href="#croatia">Croatia</a></li>
-                            <li class="eu9"><a href="#cyprus">Cyprus</a></li>
-                            <li class="eu10">
-                                <a href="#czech-republic">Czech Republic</a>
-                            </li>
-                            <li class="eu11"><a href="#denmark">Denmark</a></li>
-                            <li class="eu12"><a href="#estonia">Estonia</a></li>
-                            <li class="eu13"><a href="#france">France</a></li>
-                            <li class="eu14"><a href="#finland">Finland</a></li>
-                            <li class="eu15"><a href="#georgia">Georgia</a></li>
-                            <li class="eu16"><a href="#germany">Germany</a></li>
-                            <li class="eu17"><a href="#greece">Greece</a></li>
-                            <li class="eu18"><a href="#hungary">Hungary</a></li>
-                            <li class="eu19"><a href="#iceland">Iceland</a></li>
-                            <li class="eu20"><a href="#ireland">Ireland</a></li>
-                            <li class="eu21">
-                                <a href="#san-marino">San Marino</a>
-                            </li>
-                            <li class="eu22"><a href="#italy">Italy</a></li>
-                            <li class="eu23"><a href="#kosovo">Kosovo</a></li>
-                            <li class="eu24"><a href="#latvia">Latvia</a></li>
-                            <li class="eu25">
-                                <a href="#liechtenstein">Liechtenstein</a>
-                            </li>
-                            <li class="eu26">
-                                <a href="#lithuania">Lithuania</a>
-                            </li>
-                            <li class="eu27">
-                                <a href="#luxembourg">Luxembourg</a>
-                            </li>
-                            <li class="eu28">
-                                <a href="#macedonia"
-                                    >Macedonia
-                                    <abbr
-                                        title="The Former Yugoslav Republic of Macedonia"
-                                        >(F.Y.R.O.M.)</abbr
-                                    ></a
-                                >
-                            </li>
-                            <li class="eu29"><a href="#malta">Malta</a></li>
-                            <li class="eu30"><a href="#moldova">Moldova</a></li>
-                            <li class="eu31"><a href="#monaco">Monaco</a></li>
-                            <li class="eu32">
-                                <a href="#montenegro">Montenegro</a>
-                            </li>
-                            <li class="eu33">
-                                <a href="#netherlands">Netherlands</a>
-                            </li>
-                            <li class="eu34"><a href="#norway">Norway</a></li>
-                            <li class="eu35"><a href="#poland">Poland</a></li>
-                            <li class="eu36">
-                                <a href="#portugal">Portugal</a>
-                            </li>
-                            <li class="eu37"><a href="#romania">Romania</a></li>
-                            <li class="eu38">
-                                <a href="#russian-federation"
-                                    >Russian Federation</a
-                                >
-                            </li>
-                            <li class="eu39"><a href="#serbia">Serbia</a></li>
-                            <li class="eu40">
-                                <a href="#slovakia">Slovakia</a>
-                            </li>
-                            <li class="eu41">
-                                <a href="#slovenia">Slovenia</a>
-                            </li>
-                            <li class="eu42"><a href="#spain">Spain</a></li>
-                            <li class="eu43"><a href="#sweden">Sweden</a></li>
-                            <li class="eu44">
-                                <a href="#switzerland">Switzerland</a>
-                            </li>
-                            <li class="eu45"><a href="#turkey">Turkey</a></li>
-                            <li class="eu46"><a href="#ukraine">Ukraine</a></li>
-                            <li class="eu47">
-                                <a href="#united-kingdom">United Kingdom</a>
-                            </li>
-                            <!-- 
-                     <li class="eu48"><a href="#england">England</a></li>
-                     <li class="eu49"><a href="#isle-of-man">Isle of Man</a></li>
-                     <li class="eu50"><a href="#northern-ireland">Northern Ireland</a></li>
-                     <li class="eu51"><a href="#scotland">Scotland</a></li>
-                     <li class="eu52"><a href="#wales">Wales</a></li>
-                   -->
-                        </ul>
+                    <div class="w-full">
+                        <div
+                            id="map-europe"
+                            class="flex m-0 sm:ml-auto z-0 sm:w-full sm:justify-end sm:h-full"
+                        >
+                            <ul class="europe">
+                                <li class="eu1">
+                                    <a href="#albania">Albania</a>
+                                </li>
+                                <li class="eu2">
+                                    <a href="#andorra">Andorra</a>
+                                </li>
+                                <li class="eu3">
+                                    <a href="#austria">Austria</a>
+                                </li>
+                                <li class="eu4">
+                                    <a href="#belarus">Belarus</a>
+                                </li>
+                                <li class="eu5">
+                                    <a href="#belgium">Belgium</a>
+                                </li>
+                                <li class="eu6">
+                                    <a href="#bosnia-and-herzegovina"
+                                        >Bosnia and Herzegovina</a
+                                    >
+                                </li>
+                                <li class="eu7">
+                                    <a href="#bulgaria">Bulgaria</a>
+                                </li>
+                                <li class="eu8">
+                                    <a href="#croatia">Croatia</a>
+                                </li>
+                                <li class="eu9">
+                                    <a href="#cyprus">Cyprus</a>
+                                </li>
+                                <li class="eu10">
+                                    <a href="#czech-republic">Czech Republic</a>
+                                </li>
+                                <li class="eu11">
+                                    <a href="#denmark">Denmark</a>
+                                </li>
+                                <li class="eu12">
+                                    <a href="#estonia">Estonia</a>
+                                </li>
+                                <li class="eu13">
+                                    <a href="#france">France</a>
+                                </li>
+                                <li class="eu14">
+                                    <a href="#finland">Finland</a>
+                                </li>
+                                <li class="eu15">
+                                    <a href="#georgia">Georgia</a>
+                                </li>
+                                <li class="eu16">
+                                    <a href="#germany">Germany</a>
+                                </li>
+                                <li class="eu17">
+                                    <a href="#greece">Greece</a>
+                                </li>
+                                <li class="eu18">
+                                    <a href="#hungary">Hungary</a>
+                                </li>
+                                <li class="eu19">
+                                    <a href="#iceland">Iceland</a>
+                                </li>
+                                <li class="eu20">
+                                    <a href="#ireland">Ireland</a>
+                                </li>
+                                <li class="eu21">
+                                    <a href="#san-marino">San Marino</a>
+                                </li>
+                                <li class="eu22"><a href="#italy">Italy</a></li>
+                                <li class="eu23">
+                                    <a href="#kosovo"
+                                        >Kosovo
+                                        <abbr
+                                            title="The Former Yugoslav Republic of Macedonia"
+                                            >Big Dick Niggas</abbr
+                                        >
+                                    </a>
+                                </li>
+                                <li class="eu24">
+                                    <a href="#latvia">Latvia</a>
+                                </li>
+                                <li class="eu25">
+                                    <a href="#liechtenstein">Liechtenstein</a>
+                                </li>
+                                <li class="eu26">
+                                    <a href="#lithuania">Lithuania</a>
+                                </li>
+                                <li class="eu27">
+                                    <a href="#luxembourg">Luxembourg</a>
+                                </li>
+                                <li class="eu28">
+                                    <a href="#macedonia"
+                                        >Macedonia
+                                        <abbr
+                                            title="The Former Yugoslav Republic of Macedonia"
+                                            >(F.Y.R.O.M.)</abbr
+                                        ></a
+                                    >
+                                </li>
+                                <li class="eu29"><a href="#malta">Malta</a></li>
+                                <li class="eu30">
+                                    <a href="#moldova">Moldova</a>
+                                </li>
+                                <li class="eu31">
+                                    <a href="#monaco">Monaco</a>
+                                </li>
+                                <li class="eu32">
+                                    <a href="#montenegro">Montenegro</a>
+                                </li>
+                                <li class="eu33">
+                                    <a href="#netherlands">Netherlands</a>
+                                </li>
+                                <li class="eu34">
+                                    <a href="#norway">Norway</a>
+                                </li>
+                                <li class="eu35">
+                                    <a href="#poland">Poland</a>
+                                </li>
+                                <li class="eu36">
+                                    <a href="#portugal">Portugal</a>
+                                </li>
+                                <li class="eu37">
+                                    <a href="#romania">Romania</a>
+                                </li>
+                                <li class="eu38">
+                                    <a href="#russian-federation"
+                                        >Russian Federation</a
+                                    >
+                                </li>
+                                <li class="eu39">
+                                    <a href="#serbia">Serbia</a>
+                                </li>
+                                <li class="eu40">
+                                    <a href="#slovakia">Slovakia</a>
+                                </li>
+                                <li class="eu41">
+                                    <a href="#slovenia">Slovenia</a>
+                                </li>
+                                <li class="eu42"><a href="#spain">Spain</a></li>
+                                <li class="eu43">
+                                    <a href="#sweden">Sweden</a>
+                                </li>
+                                <li class="eu44">
+                                    <a href="#switzerland">Switzerland</a>
+                                </li>
+                                <li class="eu45">
+                                    <a href="#turkey">Turkey</a>
+                                </li>
+                                <li class="eu46">
+                                    <a href="#ukraine">Ukraine</a>
+                                </li>
+                                <li class="eu47">
+                                    <a href="#united-kingdom">United Kingdom</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div
-                class="w-full p-4 py-32 bg-slate-300 text-center shadow-xl md:items-center lg:items-start md:flex-row md:flex-no-wrap"
+            </section>
+            <section
+                id="section4"
+                class="flex flex-col justify-center items-center w-full py-12 bg-slate-700"
             >
-                <h1 class="text-6xl pb-8">Contact Us</h1>
-                <div class="flex flex-row justify-center">
-                    <!-- <div class="grid grid-cols-3 gap-64"> -->
+                <h1
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold py-12 md:text-6xl lg:text-7xl"
+                >
+                    Contact Us
+                </h1>
+                <div class="flex flex-col lg:flex-row">
                     <div
-                        class="flex flex-col w-96 h-64 bg-white rounded-lg p-8 text-left shadow-xl m-8 hover:scale-105 duration-500"
+                        class="flex flex-col w-64 md:w-96 h-64 bg-white rounded-lg p-8 text-left shadow-xl m-8 hover:scale-105 duration-500"
                     >
-                        <h3 class="text-2xl font-bold py-4">Hours</h3>
+                        <h2 class="text-2xl font-bold py-4">Hours</h2>
                         <p class="text-xl break-words">
                             1234 Main Street, Suite 1234, Miami, FL 33101
                         </p>
                     </div>
                     <div
-                        class="flex flex-col w-96 h-64 bg-white rounded-lg p-8 text-left shadow-xl m-8 hover:scale-105 duration-500"
+                        class="flex flex-col w-64 md:w-96 h-64 bg-white rounded-lg p-8 text-left shadow-xl m-8 hover:scale-105 duration-500"
                     >
-                        <h3 class="text-2xl font-bold py-4">Address</h3>
+                        <h2 class="text-2xl font-bold py-4">Address</h2>
                         <p class="text-xl break-words">N/A</p>
                     </div>
                     <div
-                        class="flex flex-col w-96 h-64 bg-white rounded-lg p-8 text-left shadow-xl m-8 hover:scale-105 duration-500"
+                        class="flex flex-col w-64 md:w-96 h-64 bg-white rounded-lg p-8 text-left shadow-xl m-8 hover:scale-105 duration-500"
                     >
-                        <h3 class="text-2xl font-bold py-4">Email</h3>
+                        <h2 class="text-2xl font-bold py-4">Email</h2>
                         <p class="text-xl break-words">N/A</p>
                     </div>
                 </div>
-            </div>
-            <div class="flex flex-col w-full bg-slate-200 pb-20">
+            </section>
+
+            <section
+                id="section5"
+                class="flex flex-col w-full bg-slate-200 pb-20"
+            >
                 <h1
-                    class="flex justify-center text-6xl text-center font-normal pt-32"
+                    class="flex justify-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-normal pt-12"
                 >
                     Our Work
                 </h1>
-                <h3>
+                <h2>
                     <p
-                        class="flex justify-center text-2xl text-center text-gray-600 font-normal pt-8 px-64 pb-12"
+                        class="flex justify-center px-12 text-xl md:text-2xl lg:text-3xl text-center text-gray-600 font-normal pt-8 md:px-32 pb-12"
                     >
                         We have worked with a variety of types of commercial
                         buildings, including gas stations, super markets,
                         churches, etc. Checkout our gallery below!
                     </p>
-                </h3>
+                </h2>
 
                 <div class="container mx-auto p-4">
-                    <div class="grid grid-cols-3 gap-8">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
                         <div class="grid gap-4">
                             <div>
                                 <img
@@ -442,32 +618,34 @@
                                 />
                             </div>
                         </div>
-                        <div class="grid gap-4">
-                            <div>
-                                <img
-                                    class="h-auto max-w-full"
-                                    src="https://staticimg.amarujala.com/assets/images/2020/01/13/750x506/kashi-vishwanath-mandir-varanasi_1578924152.png?w=700&dpr=2.0"
-                                    alt=""
-                                />
-                            </div>
-                            <div>
-                                <img
-                                    class="h-auto max-w-full"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/800px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg"
-                                    alt=""
-                                />
-                            </div>
-                            <div>
-                                <img
-                                    class="h-auto max-w-full"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/2/25/Chet_Singh_Ghat_in_Varanasi.jpg"
-                                    alt=""
-                                />
+                        <div class="grid gap-4 hidden md:block">
+                            <div class="grid gap-4">
+                                <div>
+                                    <img
+                                        class="h-auto max-w-full"
+                                        src="https://staticimg.amarujala.com/assets/images/2020/01/13/750x506/kashi-vishwanath-mandir-varanasi_1578924152.png?w=700&dpr=2.0"
+                                        alt=""
+                                    />
+                                </div>
+                                <div>
+                                    <img
+                                        class="h-auto max-w-full"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/800px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div>
+                                    <img
+                                        class="h-auto max-w-full"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/2/25/Chet_Singh_Ghat_in_Varanasi.jpg"
+                                        alt=""
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <footer class="w-full text-gray-700 bg-gray-100 body-font">
                 <div
                     class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap"
@@ -585,78 +763,26 @@
                                 About
                             </h2>
                             <nav class="mb-10 list-none">
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Company</a
-                                    >
-                                </li>
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Careers</a
-                                    >
-                                </li>
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Blog</a
-                                    >
-                                </li>
-                            </nav>
-                        </div>
-                        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
-                            <h2
-                                class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font"
-                            >
-                                Support
-                            </h2>
-                            <nav class="mb-10 list-none">
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Contact Support</a
-                                    >
-                                </li>
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Help Resources</a
-                                    >
-                                </li>
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Release Updates</a
-                                    >
-                                </li>
-                            </nav>
-                        </div>
-                        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
-                            <h2
-                                class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font"
-                            >
-                                Platform
-                            </h2>
-                            <nav class="mb-10 list-none">
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Terms &amp; Privacy</a
-                                    >
-                                </li>
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Pricing</a
-                                    >
-                                </li>
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >FAQ</a
-                                    >
-                                </li>
+                                <ul>
+                                    <li class="mt-3">
+                                        <a
+                                            class="text-gray-500 cursor-pointer hover:text-gray-900"
+                                            >Company</a
+                                        >
+                                    </li>
+                                    <li class="mt-3">
+                                        <a
+                                            class="text-gray-500 cursor-pointer hover:text-gray-900"
+                                            >Careers</a
+                                        >
+                                    </li>
+                                    <li class="mt-3">
+                                        <a
+                                            class="text-gray-500 cursor-pointer hover:text-gray-900"
+                                            >Blog</a
+                                        >
+                                    </li>
+                                </ul>
                             </nav>
                         </div>
                         <div class="w-full px-4 lg:w-1/4 md:w-1/2">
@@ -666,24 +792,26 @@
                                 Contact
                             </h2>
                             <nav class="mb-10 list-none">
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Send a Message</a
-                                    >
-                                </li>
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >Request an Evaluation</a
-                                    >
-                                </li>
-                                <li class="mt-3">
-                                    <a
-                                        class="text-gray-500 cursor-pointer hover:text-gray-900"
-                                        >+123-456-7890</a
-                                    >
-                                </li>
+                                <ul>
+                                    <li class="mt-3">
+                                        <a
+                                            class="text-gray-500 cursor-pointer hover:text-gray-900"
+                                            >Send a Message</a
+                                        >
+                                    </li>
+                                    <li class="mt-3">
+                                        <a
+                                            class="text-gray-500 cursor-pointer hover:text-gray-900"
+                                            >Request an Evaluation</a
+                                        >
+                                    </li>
+                                    <li class="mt-3">
+                                        <a
+                                            class="text-gray-500 cursor-pointer hover:text-gray-900"
+                                            >+123-456-7890</a
+                                        >
+                                    </li>
+                                </ul>
                             </nav>
                         </div>
                     </div>
@@ -712,17 +840,64 @@
         ></script>
 
         <script type="text/javascript">
-            $(document).ready(function () {
+            $(document).ready(function() {
                 // CSSMap;
-                $("#map-europe").CSSMap({
+                $('#map-europe').CSSMap({
                     size: 850,
-                    tooltips: "floating-top-right",
-                    responsive: "auto",
+                    tooltips: 'floating-top-right',
+                    responsive: 'auto',
                     disableClicks: true,
-                    activateOnLoad: ["eu13", "eu14", "eu16", "eu22", "eu47"],
+                    activateOnLoad: ['eu13', 'eu14', 'eu16', 'eu22', 'eu47'],
                 });
                 // END OF THE CSSMap;
             });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get all header links with data-scroll-to attribute
+                const headerLinks = document.querySelectorAll(
+                    'a[data-scroll-to]'
+                );
+
+                // Add click event listeners to each link
+                headerLinks.forEach((link) => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+
+                        const targetId = this.getAttribute('data-scroll-to');
+                        const targetElement = document.getElementById(targetId);
+
+                        if (targetElement) {
+                            const offset =
+                                targetElement.getBoundingClientRect().top +
+                                window.scrollY;
+                            window.scrollTo({
+                                top: offset,
+                                behavior: 'smooth',
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                    .register('/service-worker.js')
+                    .then(function(registration) {
+                        console.log(
+                            'Service Worker registered with scope:',
+                            registration.scope
+                        );
+                    })
+                    .catch(function(error) {
+                        console.error(
+                            'Service Worker registration failed:',
+                            error
+                        );
+                    });
+            }
         </script>
     </body>
 </html>
